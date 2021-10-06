@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Итерация #1</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, tags, test">
+        <meta name="description" content="Выполнение первой итерации">
+        <meta name="author" content="Pavel Sofronov">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo 3.png"  alt="Логотип Senla">
+                </a>
+                <ul>
+                    <li>О нас</li>   
+                    <li>Наши номера</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Отель "Оазис"</h1>
+            <section>
+                <h2>Забронировать номер:</h2>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                <div>
+                    <label for="data-in"><b>Дата заезда: </b></label><br>
+                    <input type="date" name="data-in">
+                </div><br>
+                <div>
+                    <label for="data-out"><b>Дата выезда:</b></label><br>
+                    <input type="date" name="data-out">
+                </div><br>
+                <div>
+                    <label for="adults"><b>Колличество взрослых:</b></label><br>
+                    <input type="number" size="1" name="adults" min="1" max="10">            
+                </div><br>
+                <div>
+                    <label for="kids"><b>Колличество детей:</b></label><br>
+                    <input type="number" size="1" name="kids" min="1" max="10">
+                </div>
+                <div>
+                    <p><b>Выбрать номер:</b></p>
+                    <table>
+                        <tr><th>Эконом</th>
+                            <th>Стандарт</th>
+                            <th>Комфорт</th>
+                        </tr>
+                        <tr>
+                            <td>3000р / сутки</td>
+                            <td>3500р / сутки</td>
+                            <td>4000р / сутки</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="1">Забронировать</td>
+                            <td><input type="radio" name="1">Забронировать</td>
+                            <td><input type="radio" name="1">Забронировать</td>
+                        </tr>
+                    </table>
+                </div><br>
+                <div>
+                    <label for="food"><b>Питание:</b></label>
+                    <div>
+                        <input type="radio" name="food" value="without-food"> без питания
+                    </div>
+                    <div>
+                        <input type="radio" name="food" value="only-breakfast"> только завтраки
+                    </div>
+                    <div>
+                        <input type="radio" name="food" value="all-inclusive"> все включено
+                    </div>
+                </div><br>
+                <div>
+                    <label for="add-services"><b>Доп. услуги:</b></label>
+                    <div>
+                        <input type="checkbox" name="add-services" value="parking-space"> Парковочное место
+                    </div>
+                    <div>
+                        <input type="checkbox" name="add-services" value="conditioner"> Кондиционер
+                    </div>
+                    <div>
+                        <input type="checkbox" name="add-services" value="transfer" checked> Трансфер до отеля
+                    </div>
+                </div><br>
+                <div>
+                    <p><b>Оставить коментарий:</b></p>
+                    <textarea name="area" cols="40" rows="3"></textarea>
+                </div><br>
+                <div>
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Очистить</button>
+                </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
